@@ -21,7 +21,7 @@ export const validatePostClient = async (req, res, next) => {
         const occurrencies = parseInt(result.rows[0].count)
         
         if(occurrencies > 0) return res.status(409)
-        .send("Not able to register. There is already a customer with the same cpf.")
+        .send("Not able to register. There is already a customer with this cpf.")
         
         res.locals.customer = value
     
