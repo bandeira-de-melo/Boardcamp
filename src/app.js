@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import costumersRouter from './routers/costumers.routes.js'
+import customersRouter from './routers/customers.routes.js'
 import gamesRouter from './routers/games.routes.js'
 dotenv.config()
 
@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 //routes
-app.use([costumersRouter, gamesRouter])
+app.use([customersRouter, gamesRouter])
 
 
 app.listen(5000, ()=>{
