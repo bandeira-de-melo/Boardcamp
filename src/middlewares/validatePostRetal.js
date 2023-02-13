@@ -43,5 +43,5 @@ export const validatePostRetal = async (req, res, next) => {
         res.status(500).send(error)
     }
     
-  next()
+  /* next() */
 }    
